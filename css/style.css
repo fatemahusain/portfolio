@@ -1,1 +1,246 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap");
+:root {
+  --primary-color: rgb(221, 146, 6);
+  --secondary-color: rgb(41, 34, 34);
+}
+
+body {
+  text-transform: lowercase;
+  color: whitesmoke;
+  background-color: rgb(17, 24, 39);
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+}
+
+.lamp {
+  margin-left: 80%;
+  filter: hue-rotate(280deg);
+  filter: brightness(100%);
+  color: var(--primary-color);
+}
+
+.hero {
+  width: 80%;
+  margin-top: -4em;
+  padding-top: 16%;
+  text-shadow: 1em;
+}
+.hero .container {
+  max-width: 80%;
+  margin-left: 15em;
+}
+.hero h3 {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.9em;
+  margin-top: -0.2em;
+}
+
+h3 {
+  color: var(white);
+  overflow: hidden;
+  border-right: 0.1em solid rgb(255, 255, 255); /* Adjust the border style as needed */
+  white-space: nowrap;
+  animation: typing 3s steps(35) forwards;
+}
+
+span {
+  font-weight: bold;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+.title {
+  color: var(--primary-color);
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.title img {
+  margin-right: 0.7em;
+}
+
+.firstname {
+  font-size: 5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+.lastname {
+  color: var(--primary-color);
+}
+
+nav {
+  font-size: 1.3em;
+  margin-top: 3em;
+  margin-top: 2em;
+}
+nav p {
+  margin-right: 0em;
+  font-weight: bold;
+  padding-right: 1em;
+}
+nav .container {
+  display: flex;
+  max-width: 80%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin-left: -15em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  margin-right: 1em;
+}
+nav ul li a:hover {
+  color: var(--secondary-color);
+  transition: 0.8s;
+  font-weight: 500;
+}
+
+.resume-cta {
+  border: solid var(--primary-color);
+  border-radius: 0.5em;
+  margin-top: 1.3em;
+  padding: 1em;
+  width: 6em;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  transition: box-shadow 0.3s ease;
+}
+.resume-cta .resume {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 500;
+  text-align: center;
+  padding-left: 0.3em;
+}
+.resume-cta:hover {
+  background-color: var(--primary-color);
+  transition: 0.7s;
+}
+
+.aboutme-section {
+  padding-bottom: 9em;
+}
+.aboutme-section .container {
+  width: 60%;
+  margin: 0 auto;
+  padding-left: 3em;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  padding-top: 2em;
+  margin-top: 8em;
+  margin-left: 30%;
+  color: whitesmoke;
+  text-transform: none;
+  border-radius: 1em;
+  box-shadow: -10px 13px 15px -4px var(--primary-color);
+  font-weight: 500;
+  font-size: 1em;
+  border-color: var(--primary-color);
+}
+.aboutme-section h4 {
+  text-transform: lowercase;
+  font-size: 2em;
+  color: var(--primary-color);
+}
+
+.projects-section {
+  padding-bottom: 3em;
+}
+.projects-section .tags a {
+  margin-left: 2em;
+  margin-top: 5em;
+  background-color: var(--primary-color);
+  border-radius: 0.5em;
+  padding: 1em;
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-transform: none;
+}
+.projects-section .tags .ctag {
+  margin-left: 20em;
+}
+.projects-section h4 {
+  color: var(--primary-color);
+  padding-left: 2em;
+  font-size: 2em;
+}
+.projects-section .mini-container {
+  display: flex;
+  justify-content: left;
+}
+.projects-section .container {
+  padding-right: 10em;
+  width: 80%;
+  justify-content: space-evenly;
+  border-radius: 1em;
+  margin-left: -1em;
+  padding: 1em;
+  box-shadow: 10px 13px 13px -4px var(--primary-color);
+  margin-top: 7em;
+}
+.projects-section .container .project1, .projects-section .container .project2 {
+  flex: 1;
+  margin: 1em;
+  display: flex;
+}
+.projects-section .container .project1 img, .projects-section .container .project2 img {
+  margin: 1em;
+  border-radius: 1em;
+}
+.projects-section .container .project1 p, .projects-section .container .project2 p {
+  font-weight: 500;
+  font-size: 1em;
+  margin-left: 10px;
+  text-transform: none;
+}
+.projects-section .container .project1 p span, .projects-section .container .project2 p span {
+  text-transform: none;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.projects-section .container .project2 .chess {
+  filter: saturate(20%);
+  filter: sepia(100%);
+  filter: hue-rotate(180deg); /* Rotate the hue by 180 degrees (adjust as needed) */
+}
+
+hr {
+  margin-top: 10em;
+  border-color: var(--primary-color);
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+footer img {
+  width: 25px;
+  height: 25px;
+  padding: 0em 7px;
+  margin-bottom: -5px;
+  margin-left: 10px;
+}
+footer p {
+  text-align: left;
+  margin-left: 2em;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--primary-color);
+}/*# sourceMappingURL=style.css.map */
