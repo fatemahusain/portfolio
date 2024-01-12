@@ -136,6 +136,9 @@ nav ul li a:hover {
 .aboutme-section {
   padding-bottom: 9em;
 }
+.aboutme-section p {
+  line-height: 1.5em;
+}
 .aboutme-section .container {
   width: 60%;
   margin: 0 auto;
@@ -150,13 +153,18 @@ nav ul li a:hover {
   border-radius: 1em;
   box-shadow: -10px 13px 15px -4px var(--primary-color);
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.2em;
   border-color: var(--primary-color);
 }
 .aboutme-section h4 {
   text-transform: lowercase;
   font-size: 2em;
   color: var(--primary-color);
+}
+.aboutme-section span {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-style: italic;
 }
 
 .projects-section {
@@ -192,7 +200,7 @@ nav ul li a:hover {
   margin-left: -1em;
   padding: 1em;
   box-shadow: 10px 13px 13px -4px var(--primary-color);
-  margin-top: 7em;
+  margin-top: 4em;
 }
 .projects-section .container .project1, .projects-section .container .project2 {
   flex: 1;
@@ -205,7 +213,7 @@ nav ul li a:hover {
 }
 .projects-section .container .project1 p, .projects-section .container .project2 p {
   font-weight: 500;
-  font-size: 1em;
+  font-size: 1.3em;
   margin-left: 10px;
   text-transform: none;
 }
@@ -218,6 +226,19 @@ nav ul li a:hover {
   filter: saturate(20%);
   filter: sepia(100%);
   filter: hue-rotate(180deg); /* Rotate the hue by 180 degrees (adjust as needed) */
+}
+
+.aboutme-section ul {
+  list-style: georgian;
+  text-transform: none;
+  border: solid var(--primary-color);
+  border-radius: 0.3em;
+  border-style: double;
+  padding: 1em;
+  padding-left: 2em;
+}
+.aboutme-section ul p {
+  font-size: 1.1em;
 }
 
 hr {

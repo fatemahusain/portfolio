@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap');
+
+
 :root {
     --primary-color: rgb(221, 146, 6);
     --secondary-color: rgb(41, 34, 34);
@@ -158,6 +160,9 @@ nav {
 }
 
 .aboutme-section {
+    p {
+        line-height: 1.5em;
+    }
     padding-bottom: 9em;
     .container {
         width: 60%;
@@ -173,7 +178,7 @@ nav {
         border-radius: 1em;
         box-shadow: -10px 13px 15px -4px var(--primary-color);//* Add shadow effect */
         font-weight: 500;
-        font-size: 1em;
+        font-size: 1.2em;
         border-color: var(--primary-color);
     } 
     h4 {
@@ -181,13 +186,16 @@ nav {
         font-size: 2em;
         color: var(--primary-color);
     }
-}
+    span {
+        color: var(--primary-color);
+        font-weight: 500;
+        font-style: italic;
+    }
+    }
+
 
 
 .projects-section {
-
-    
-
      .tags {
         a {
             margin-left: 2em;
@@ -228,7 +236,7 @@ nav {
         margin-left: -1em;
         padding: 1em;
         box-shadow: 10px 13px 13px -4px var(--primary-color);
-        margin-top: 7em;
+        margin-top: 4em;
         .project1, .project2 {
             flex: 1;
             margin: 1em;
@@ -239,7 +247,7 @@ nav {
                 }
             p {
                 font-weight: 500;
-                font-size: 1em;
+                font-size: 1.3em;
                 margin-left: 10px;
                 text-transform: none;
                 span {
@@ -259,6 +267,26 @@ nav {
                 }
         }
     }
+}
+
+.aboutme-section {
+
+    ul {
+        list-style:georgian;
+        text-transform: none;
+        p {
+            font-size: 1.1em;
+        }
+        border: solid var(--primary-color);
+        border-radius: 0.3em;
+        border-style: double;
+      
+        padding: 1em;
+        padding-left: 2em;
+       
+   
+    }
+
 }
 
 hr {
