@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-        <a href="#"><img id="lamp-off" class="lamp-off" src="images/off.png" width="100px"></a>
+        <a href="#"><img id="lamp-off" class="lamp-off" src="images/off-lamp.png" width="100px"></a>
         <a href="#"><img id="lamp-on" class="lamp-on" src="images/on.png" width="100px"></a>
     </div>
     <div>
@@ -28,7 +28,7 @@
                       
                     <ul>
                         <li class="menu" id="about"><a href="#"><span>[</span> About</a></li>
-                        <li class="menu" id="experience"><a href="#">Projects</a></li>
+                        <li class="menu" id="experience"><a href="#">projects</a></li>
                         <li class="menu" id="contact"><a href="#">contact <span>]</span></a></li>
                     </ul>
                
@@ -48,8 +48,8 @@
                 <h4>a bit about me . . .</h4>
                 <p>I am currently in my 2nd year at the University of Waterloo, pursuing Pure Mathemaics.
                 I have always had a passion for math, but after taking my first programming course at university, I found a new love for software development. 
-                    In one of my favourite classes - Object-Oriented Programming, I developed a chess game from scratch.
-                    I love doing projects that require problem-solving and creative thinking. 
+                    In one of my favourite classes - Object-Oriented Programming, I had the oppurtunity to develeop a chess game from scratch.
+                    This made me realize I enjoy building projects that require problem-solving and creative thinking. 
                     Currently, I am delving into game development and learning technologies 
                     including <span>Unity</span> and <span>Unreal Engine</span>, where I can combine my passion for mathematics with 
                     the creative world of software design.
@@ -180,9 +180,13 @@
     });
 
     switchOff.addEventListener('click', () => {
-        body.classList.toggle('turnoff')
-        
+        body.classList.toggle('turnoff'),
+        gitIcon.classList.toggle('blue-icon'), 
+        lkIcon.classList.toggle('blue-icon'), 
+        emailIcon.classList.toggle('blue-icon')
     });
+        
+    
 
 
 
