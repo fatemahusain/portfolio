@@ -9,16 +9,19 @@
 </head>
 <body>
     <div>
-        <!-- <a><img class="lamp" src="images/pendant.svg" width="100px"></a> -->
+        <a href="#"><img id="lamp-off" class="lamp-off" src="images/off.png" width="100px"></a>
+        <a href="#"><img id="lamp-on" class="lamp-on" src="images/on.png" width="100px"></a>
     </div>
     <div>
         <section class="hero">
             <div class="container">
                
-                <p class="title"> <img src='images/pi.svg' width="13" height="13">there, my name is</p>
+                <p class="title"> 
+                    <!-- <img class="pi" src='images/pi.svg' width="13" height="13"> -->
+                    👋 Hey there! My name is</p>
                 
                 <h1 class="firstname"><span></span>Fatema <span class="lastname">Husain</span><span></span></h1>
-                <h3>what's a pi-oneer doing here?</h3>
+                <h3>your friendly Neighborhood mathematician</h3>
                 
                 <nav>
                     <div class="container">
@@ -46,8 +49,7 @@
                 <p>I am currently in my 2nd year at the University of Waterloo, pursuing Pure Mathemaics.
                 I have always had a passion for math, but after taking my first programming course at university, I found a new love for software development. 
                     In one of my favourite classes - Object-Oriented Programming, I developed a chess game from scratch.
-                    I realized I enjoy doing work that involves solving problem-solving and
-                    logical thinking 
+                    I love doing projects that require problem-solving and creative thinking. 
                     Currently, I am delving into game development and learning technologies 
                     including <span>Unity</span> and <span>Unreal Engine</span>, where I can combine my passion for mathematics with 
                     the creative world of software design.
@@ -83,9 +85,9 @@
             <div class="container">
                 <h4>upcoming . . .</h4>
                 <ul>
-                    <li>  More fun projects</li>
-                    <li>  Exploring new gaming technologies</li>
-                    <li>  and of course... doing more math!</li>
+                    <li>  🌮 Full Stack MERN Recipes App</li>
+                    <li>  🎮 Exploring new gaming technologies</li>
+                    <li>  ➗ and of course... more math!</li>
                     
                 </ul>
             </div>
@@ -99,13 +101,17 @@
     <hr>
     <footer id="contact-section">
         <p>Connect
-            <a href="mailto:fatema.hsn03@gmail.com"><img src="images/email.svg"></a>
-            <!-- <p>fatema.hsn03@gmail.com</p> -->
-            <a aria="linkedin" href="https://www.linkedin.com/in/fatema-husain-9a3a5b1ab/"><img src="images/linkedin.svg"></a>
-            <a href="https://github.com/fatemahusain"><img src="images/git.svg"></a>
+            <a aria-label="email" href="mailto:fatema.hsn03@gmail.com"><img id='email' src="images/email.svg"></a>
+            <!-- <a aria-label="email" href="mailto:fatema.hsn03@gmail.com"><img class="blue-icon" src="images/mail-on.svg"></a> -->
+            <a aria="linkedin" href="https://www.linkedin.com/in/fatema-husain-9a3a5b1ab/"><img id="lk" src="images/linkedin.svg"></a>
+            <!-- <a aria="linkedin" href="https://www.linkedin.com/in/fatema-husain-9a3a5b1ab/"><img class="blue-icon" src="images/linkedin-on.svg"></a> -->
+            <a aria="github" href="https://github.com/fatemahusain"><img id="git" src="images/git.svg"></a>
+            <!-- <a aria="github" href="https://github.com/fatemahusain"><img class="blue-icon" src="images/git-on.svg"></a> -->
+
 
         </p>
         Made with &#129505; by Fatema 
+        <a class='credit' href="https://www.flaticon.com/free-icons/illumination" title="illumination icons">Illumination icons created by Freepik - Flaticon</a>
     </footer>
 </body>
 </html>
@@ -154,6 +160,32 @@
             scrollToSection(document.getElementById('contact-section'), 500);
         });
     });
+
+    const body = document.querySelector('body');
+    const nav = document.querySelector('.nav');
+    const switchOn= document.getElementById('lamp-off');
+    const switchOff= document.getElementById('lamp-on');
+    const gitIcon = document.getElementById('git');
+    const lkIcon = document.getElementById('lk');
+    const emailIcon = document.getElementById('email');
+
+
+
+  
+    switchOn.addEventListener('click', () => {
+        body.classList.toggle('turnoff'),
+        gitIcon.classList.toggle('blue-icon'), 
+        lkIcon.classList.toggle('blue-icon'), 
+        emailIcon.classList.toggle('blue-icon')
+    });
+
+    switchOff.addEventListener('click', () => {
+        body.classList.toggle('turnoff')
+        
+    });
+
+
+
 </script>
 
 
